@@ -8,6 +8,7 @@ body {
   background-color: #000000;
 }
 
+/* Specifying the "a" anchor element we are just selecting the anchor element, therefore all the h1 will not be affected */
 h1 a {
   color: white;
 }
@@ -16,6 +17,7 @@ h1 a {
   background-color: #333333;
   display: flex;
 }
+/* For the "id" we use "#" when we are in the stylesheet. */
 
 ul {
   text-align: center;
@@ -36,6 +38,8 @@ ul li a {
   font-size: 15px;
 }
 
+/* Hover will make that when we point to an element those elements will be highlited by a selected color. Basically this is just for styling and also can help
+to know where are we (the user). */
 ul li a:hover {
   color: red;
 }

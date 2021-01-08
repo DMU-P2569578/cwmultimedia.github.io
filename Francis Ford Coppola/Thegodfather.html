@@ -1,13 +1,19 @@
 <!DOCTYPE html>
 
 <html lang="en" dir="ltr">
-
+<!-- the "lang" tells the browser the language used. -->
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- This makes the webpage mobile friendly. -->
   <title>The Godfather</title>
+
   <link rel="stylesheet" href="css/style.css" type="text/css">
+
   <style media="screen">
+  /* I decided to specify some styles here instead of an external css page cause when we specify in css all the elements selected are affected in every page.
+  In the other hand, if I just style the elements on the same page, we're just selecting all in the exact same page.*/
+
     .video {
       margin: 1px;
       border: 1px;
@@ -32,24 +38,30 @@
 </head>
 
 <body>
-  <!--  Cool tip: When looking on the website for how your page looks it is
-  really helpfull to see it trough the developer tools where every part is highlighted
-  and you can clearly see your  errors or something that you missing while you coding.  -->
+  <!-- The body is the visual part of the webpage. -->
+
 
   <div class="headertitle">
 
 
 
     <h1 class="pagetitle"><a href="Thegodfather.html">The Godfather</a></h1>
+    <!-- H1 for the title. All headings are ordered by importance, starting from h1 to h6. -->
+ <!--We use "class" to specify an exact thing, for example not every h1 elements are meant to be the same, so "class"  makes
+  easier to specify what we want to style in the stylesheet. -->
   </div>
-  <!-- I'm using the id element to specify that this is just for the menu section, as nav and list elements are meant to be used for other purposes as well -->
+
   <nav id="menu">
+    <!-- The id element specifies that this is just for the menu section, as the  nav and list
+    elements are meant to be used for other purposes -->
+    <!-- We use "nav" to define a navigation section, in this case a menu. -->
     <ul>
       <li> <a href="Thegodfather.html">About </a></li>
       <li> <a href="secondpage.html">Cast members</a></li>
-      <!-- I'm adding a search form just to make the web look a little bit more organized. -->
       <li>
         <form>
+          <!-- We adding a search form to make the web look a little bit more organized and easier for the people to find information. -->
+
           <input type="search" name="q" placeholder="Search query">
           <input type="submit" value="Find">
         </form>
@@ -57,15 +69,17 @@
     </ul>
   </nav>
   <article class="Synopisis film Thegodfather">
-
+    <!-- We add sections and  articles to provide structure for the webpage, giving a
+     better understanding of contents for the search engines. -->
     <section>
 
 
 
       <h2>Synopisis The Godfather</h2>
       <hr>
+      <!-- hr creates a line that divides the content visually. -->
       <img src="images/poster2.jpg" alt="poster image of the Godfather" class="posterimage" style="max-width: 100%">
-
+<!-- Img allow us to add images. src means the source of the image. alt provides a description of the element both for the browser and users in case that the image is not working. -->
       <p>In 1945 New York City, at his daughter Connie's wedding to Carlo, Vito Corleone, the don of the Corleone crime family listens to requests. His youngest son, Michael, who was a Marine during World War II, introduces his girlfriend, Kay Adams,
         to his family at the reception. Johnny Fontane, a popular singer and Vito's godson, seeks Vito's help in securing a movie role; Vito dispatches his consigliere, Tom Hagen, to Los Angeles to persuade studio head Jack Woltz to give Johnny the
         part. Woltz refuses until he wakes up in bed with the severed head of his prized stallion.
@@ -88,14 +102,11 @@
         While Michael stands at the altar as the child's godfather, Corleone hitmen murder the other New York City dons and Greene. Tessio's treachery leads to his execution. Michael extracts Carlo's confession to his complicity in setting up Sonny's
         murder for Barzini; Clemenza garrotes Carlo to death. Connie accuses Michael of the murder, telling Kay that Michael ordered all of the killings. Kay is relieved when Michael denies it, but then she watches the capos arrive to pay reverence
         to her husband as Don Corleone and their closing the door on her.</p>
+<!-- The p or paragraph is used to create normal text. -->
 
 
-
-
-
-
-      <!-- We add line brakers in order that the website can run properly in any device cause we had problems with the spacing in smartphone devices. -->
       <aside class="information related to the synopsis">
+        <!-- Aside is just to show extra information that is not relevant to the main topic but can give more information aboiut. -->
         <h3>Movie information</h3>
 
         <p> <strong>Directed by:</strong> <a href="https://en.wikipedia.org/wiki/Francis_Ford_Coppola"> Francis Ford Coppola</a></p>
@@ -103,6 +114,9 @@
         <p> <strong>Release date: </strong>
           March 14, 1972 (Loew's State Theatre)
           March 24, 1972 (United States)</p>
+
+          <!-- We use "strong" element just to style selected parts of text or headings, making the selected part bolder. -->
+          <!-- The "a" or anchor element is basically a link. With "href" we provide a direction. -->
       </aside>
 
 
@@ -113,18 +127,23 @@
       <h2>Movie trailer</h2>
       <hr>
       <video controls poster="images/The-Godfather.png" class="video" width="100%">
+        <!-- We use "video" in order to be able to display video content. With "controls" we provide buttons to control the video. "Poster" is used
+      to provide the desired thumbnail. "width" is used to specify the size of the video and how  it fits the webpage and interacts with other elements. -->
         <source src="video/trailer.mp4" type="video/mp4">
         <source src="video/trailer.webm" type="video/webm">
         <source src="video/trailer.ogv" type="video/ogg">
+          <!-- The reason to provideo diffierent sources for the same content is because not every browser is able to display every source. -->
+
         <p> <strong> If your browser does not support the video element </strong> please click <a href='video/trailer.mp4'>here</a>
           to download an mp4 file of the video.</p>
+          <!--  We are providing a fallback in case that some browser do not display any video source, in that case the user will be able to download the video.-->
         <!--We are not implementing other video source others than mp4 as we want to see if the fallback download link is working. As this is
         a coursework and not a "real project"  (something that is meant to use for others) we think that it is a good opportunity to try in the feedback part
         of this coursework. -->
       </video>
     </section>
     <section>
-
+<!-- The footer section is to show some extra information about the webpage. -->
       <footer> Course work 1 Multimedia. Ali Siddibeh Kurubally/P2569578. </footer>
 
     </section>
